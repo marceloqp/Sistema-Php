@@ -25,7 +25,7 @@
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="../sistema/clientes/index_cliente.php">Clientes <span class="sr-only">(current)</span></a></li>
                     <li><a href="../sistema/produtos/index_produtos.php">Produtos</a></li>
-               
+                    <li> <a href="../sistema/pdv/venda.php">Vendas</a></li>
                 </ul>
       
     </div><!-- /.navbar-collapse -->

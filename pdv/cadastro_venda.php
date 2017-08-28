@@ -56,7 +56,7 @@ $produtos = $stm->fetchAll(PDO::FETCH_OBJ);
 	    <button type="submit" class="btn btn-primary" id='botao'> 
 	      Efetuar Venda
 	    </button>
-
+            <a href='../pdv/venda.php' class="btn btn-danger">Cancelar</a>
 	</form>    
 
 	<script type="text/javascript" src="js/custom_venda.js"></script>
