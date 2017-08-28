@@ -49,8 +49,8 @@
 				exit;
 			endif;
 
-		endif;
-
+            endif;
+                    
 
 
 		// Verifica se foi solicitada a inclusão de dados
@@ -125,3 +125,6 @@
 			echo "<meta http-equiv=refresh content='3;URL=index_produtos.php'>";
 		endif;
 		?>
+        </div>
+    </body>
+</html>

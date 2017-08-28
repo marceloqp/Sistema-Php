@@ -200,7 +200,7 @@
 			$stm->bindValue(':status', $status);
 			$stm->bindValue(':foto', $nome_foto);
 			$stm->bindValue(':id', $id);
-                        echo(var_dump($stm));
+                        //echo(var_dump($stm));
 			$retorno = $stm->execute();
 
 			if ($retorno):
@@ -209,7 +209,7 @@
 		    	echo "<div class='alert alert-danger' role='alert'>Erro ao editar registro!</div> ";
 			endif;
 
-			echo "<meta http-equiv=refresh content='3;URL=index.php'>";
+			echo "<meta http-equiv=refresh content='3;URL=index_cliente.php'>";
 		endif;
 
 

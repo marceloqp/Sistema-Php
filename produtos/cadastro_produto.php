@@ -28,7 +28,7 @@
 
 			    <div class="form-group">
 			      <label for="preco">Preço</label>
-                              <input type="number" class="form-control" id="preco" name="preco" placeholder="Informe o Preço">
+                              <input type="float" class="form-control" id="preco" name="preco" placeholder="Informe o Preço">
 			      <span class='msg-erro msg-preco'></span>
 			    </div>
 			   
@@ -42,7 +42,7 @@
 			</form>
 		</fieldset>
 	</div>
-	<script type="text/javascript" src="../js/custom.js"></script>
+    <script type="text/javascript" src="../js/custom_produto.js"></script>
     
     
     
