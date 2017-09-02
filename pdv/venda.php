@@ -46,9 +46,8 @@
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="../clientes/index_cliente.php">Clientes <span class="sr-only">(current)</span></a></li>
                     <li><a href="../produtos/index_produtos.php">Produtos</a></li>
-                    <li>
-                        <a href="../pdv/venda.php"> Vendas</a>
-                    </li>
+                    <li><a href="../pdv/venda.php"> Vendas</a></li>
+                    <li><a href="../relatorios/index_relatorios">Relatórios</a></li>
                 </ul>
       
     </div>
@@ -100,7 +99,7 @@
 							<td><?=$venda->status?></td>
 							<td>
 								
-								<a href='javascript:void(0)' class="btn btn-danger link_estorno" rel="<?=$venda->id?>">Estornar</a>
+								<a href='javascript:void(0)' class="btn btn-danger linkEstorno_venda" rel="<?=$venda->id?>">Estornar</a>
 							</td>
 						</tr>	
 					<?php endforeach;?>

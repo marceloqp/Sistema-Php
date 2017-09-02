@@ -48,7 +48,8 @@ endif;
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="../clientes/index_cliente.php">Clientes <span class="sr-only">(current)</span></a></li>
                     <li><a href="index_produtos.php">Produtos</a></li>
-               
+                    <li> <a href="../pdv/venda.php">Vendas</a></li>
+                    <li><a href="../relatorios/index_relatorios">Relatórios</a></li>
                 </ul>
       
             </div><!-- /.navbar-collapse -->
