@@ -14,7 +14,7 @@ $pagina = "";
 $pagina .= "<h1>RELATÓRIO DE PRODUTOS</h1>";
 
 $pagina .= "
-        <table class=table table-striped width=100% >
+        <table align=left class=table table-striped width=100% >
           <tr class=active>
             <th>Nome</th>
             <th>Quantidade</th>
@@ -26,10 +26,10 @@ $pagina .= "
 
 foreach($produtos as $produto):
 $pagina .= "
-          <tr>
-            <td>$produto->nome</td>
-            <td>$produto->quantidade</td>
-            <td>$produto->preco</td>
+          <tr  align=left class=active>
+            <th>$produto->nome</th>
+            <th>$produto->quantidade</th>
+            <th>$produto->preco</th>
            
             
           </tr>

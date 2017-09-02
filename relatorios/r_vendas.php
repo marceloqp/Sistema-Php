@@ -14,7 +14,7 @@ $pagina .= "<h1>RELATÓRIO DE VENDAS</h1>";
 
 $pagina .= "
         <table class=table table-striped width=100% >
-          <tr class=active>
+          <tr tr align=center class=active>
             <th>ID</th>
             <th>CLIENTE</th>
             <th>PRODUTO</th>
@@ -22,16 +22,18 @@ $pagina .= "
             <th>STATUS</th>
            
           </tr>
+          
 ";
 
 foreach($venda as $vendas):
 $pagina .= "
-          <tr>
-            <td>$vendas->id</td>
-            <td>$vendas->cliente</td>
-            <td>$vendas->produto</td>
-            <td>$vendas->quantidade</td>
-            <td>$vendas->status</td>
+         
+          <tr  align=center class=active>
+            <th >$vendas->id</th>
+            <th>$vendas->cliente</th>
+            <th>$vendas->produto</th>
+            <th>$vendas->quantidade</th>
+            <th>$vendas->status</th>
             
           </tr>
 ";

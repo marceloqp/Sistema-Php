@@ -27,10 +27,10 @@ foreach($clientes as $cliente):
 $pagina .= "
           
           <tr align='center'>
-            <td>$cliente->nome</td>
-            <td>$cliente->email</td>
-            <td>$cliente->celular</td>
-            <td>$cliente->status</td>
+            <th>$cliente->nome</th>
+            <th>$cliente->email</th>
+            <th>$cliente->celular</th>
+            <th>$cliente->status</th>
             
           </tr>
 ";
