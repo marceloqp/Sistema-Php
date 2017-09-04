@@ -18,7 +18,7 @@ else:
 
 	// Executa uma consulta baseada no termo de pesquisa passado como parâmetro
 	$conexao = conexao::getInstance();
-	$sql = 'SELECT id, nome FROM tab_produtos WHERE nome LIKE :nome';
+	$sql = 'SELECT id, nome, quantidade, preco FROM tab_produtos WHERE nome LIKE :nome';
 	$stm = $conexao->prepare($sql);
 	$stm->bindValue(':nome', $termo.'%');
 	$stm->execute();
@@ -46,7 +46,7 @@ endif;
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="../clientes/index_cliente.php">Clientes <span class="sr-only">(current)</span></a></li>
+                    <li><a href="../clientes/index_cliente.php">Clientes <span class="sr-only">(current)</span></a></li>
                     <li><a href="index_produtos.php">Produtos</a></li>
                     <li> <a href="../pdv/venda.php">Vendas</a></li>
                     <li><a href="../relatorios/index_relatorios">Relatórios</a></li>
@@ -89,16 +89,16 @@ endif;
 						<th>Preço</th>
 						<th>Ação</th>
 					</tr>
-					<?php foreach($produtos as $produtos):?>
+					<?php foreach($produtos as $produto):?>
 						<tr>
 							
-							<td><?=$produtos->nome?></td>
-							<td><?=$produtos->quantidade?></td>
-							<td><?=$produtos->preco?></td>
+							<td><?=$produto->nome?></td>
+							<td><?=$produto->quantidade?></td>
+							<td><?=$produto->preco?></td>
 							
 							<td>
-								<a href='editar_produto.php?id=<?=$produtos->id?>' class="btn btn-primary">Editar</a>
-								<a href='javascript:void(0)' class="btn btn-danger link_exclusao_produto" rel="<?=$produtos->id?>">Excluir</a>
+								<a href='editar_produto.php?id=<?=$produto->id?>' class="btn btn-primary">Editar</a>
+								<a href='javascript:void(0)' class="btn btn-danger link_exclusao_produto" rel="<?=$produto->id?>">Excluir</a>
 							</td>
 						</tr>	
 					<?php endforeach;?>

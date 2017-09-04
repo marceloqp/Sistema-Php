@@ -44,7 +44,7 @@
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="../clientes/index_cliente.php">Clientes <span class="sr-only">(current)</span></a></li>
+                    <li><a href="../clientes/index_cliente.php">Clientes </a></li>
                     <li><a href="../produtos/index_produtos.php">Produtos</a></li>
                     <li><a href="../pdv/venda.php"> Vendas</a></li>
                     <li><a href="../relatorios/index_relatorios">Relatórios</a></li>

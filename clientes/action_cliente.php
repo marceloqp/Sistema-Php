@@ -142,7 +142,7 @@
 		    	echo "<div class='alert alert-danger' role='alert'>Erro ao inserir registro!</div> ";
 			endif;
 
-			echo "<meta http-equiv=refresh content='3;URL=index.php'>";
+			echo "<meta http-equiv=refresh content='3;URL=index_cliente.php'>";
 		endif;
 
 

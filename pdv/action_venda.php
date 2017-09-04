@@ -51,8 +51,23 @@
 
                 endif;
                 if ($acao == 'incluir'):
-
                  
+                        
+                   
+                $sql = 'SELECT quantidade from tab_produtos WHERE nome = :produto';
+                $stm1 = $conexao->prepare($sql);
+                $stm1->bindValue(':produto', $produto);
+                $stm1->execute();
+                $estoque = $stm1->fetch(PDO::FETCH_OBJ);
+                $aux = ($estoque->quantidade);
+                $aux = ($aux - $quantidade);
+                
+                $sql4 = 'UPDATE tab_produtos SET quantidade =:quantidade WHERE nome =:produto';
+                $stm = $conexao->prepare($sql4);
+                $stm->bindValue(':produto', $produto);
+                $stm->bindValue(':quantidade',$aux);
+                $stm->execute();
+                $retorno = $stm->execute();
 			     
                 	$sql = 'INSERT INTO tab_vendas (cliente, quantidade, produto, data, status)
 							   VALUES(:cliente, :quantidade, :produto, :data, :status)';
